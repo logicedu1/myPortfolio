@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    font-family: monospace;
+}
+nav{
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px;
+}
+nav h2{
+    text-align: center;
+    font-size: 30px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 25px;
+    margin: 0 30%;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media(max-width: 1000px){
+    nav ul{
+        margin: 0 20%;
+    }
+}
+@media(max-width: 655px){
+    nav ul{
+        margin: 0 10%;
+    }
+}
+
+
+
+.container{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    padding: 10%;
+}
+.divs ul li{
+    list-style: none;
+}
+.divs ul li a{
+    text-decoration: none;
+}
+.name{
+    font-size: 38px;
+    padding: 10px ;
+    font-weight: 600;
+    color: rgb(10, 3, 31);
+}
+.address{
+    font-size: 20px;
+    color: rgb(105, 108, 110);
+    padding: 10px 0;
+}
+.qualification ul li{
+    padding: 10px 0;
+    font-size: 18px;
+}
+.qualification ul li:last-child{
+    margin-bottom: 20px;
+}
+.links span{
+    color: rgb(39, 37, 37);
+    font-size: 18px;
+    padding-top: 20px;
+}
+.links ul li{
+    padding: 5px 0;
+}
+.links ul li a{
+    font-size: 18px;
+}
+
