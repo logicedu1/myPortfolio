@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.grid-dash{
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 250px auto;
+}
+.grid-dash-main{
+    background-color: rgb(211, 218, 221);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.grid-dash-sub{
+    background-color: rgba(219, 225, 226, 0.568);
+}
+.dash-main{
+    display: grid;
+    grid-template-columns: 250px;
+}
+.dash-main .profile-card{
+    text-align: center;
+    width: 40%;
+    margin: 5% 15%;
+}
+.dash-main .profile-card img{
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.dash-main .profile-name h2{
+    text-align: center;
+    color: #f35111;
+    font-size: 18px;
+}
+
+.dash-main-top,
+.dash-main-bottom{
+    padding: 10px 0;
+    margin: 5px 0;
+}
+.dash-main-bottom{
+    border-top: 1px solid rgba(232, 233, 233, 0.753);
+}
+.dash-main-top ul li,
+.dash-main-bottom ul li{
+    list-style: none;
+    padding: 5px 25px;
+    transition: .2s ease-in-out;
+}
+.dash-main-top ul li:hover{
+    background-color: #f35111;
+    color: #fff;
+}
+.dash-main-top ul li:hover a{
+    color: #fff;
+}
+.dash-main-top ul li a,
+.dash-main-bottom ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 4px 0;
+}
+.dash-main-top ul li a{
+    font-size: 16px;
+    color: rgb(32, 32, 32);
+}
+.dash-main-bottom ul li a{
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+}
+.dash-main-bottom ul li:hover{
+    background-color: rgb(235, 232, 232);
+}
+
+
+
+.grid-dash-sub{
+    padding: 10px 20px;
+}
+.grid-dash-sub > h2{
+    color: #f35111;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.grid-space{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px;
+    grid-gap: 15px;
+}
+.grid-space-merge{
+    box-shadow: 0 2px 4px 4px rgba(180, 176, 176, 0.2),
+    inset 0 2px 2px rgba(173, 173, 173, 0.2);
+    padding: 20px;
+    border-radius: 2px;
+    background-color: #fff;
+}
